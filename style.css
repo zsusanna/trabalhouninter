@@ -1,0 +1,277 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #5bb8e2;
+    color: #000;
+}
+
+
+/* Estilo para o conteúdo principal da página */
+main {
+    
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Estilo para os títulos h1 e h2 */
+h1, h2 {
+    color: #1d46a5;
+}
+
+/* Seção de introdução com centralização de texto e espaçamento interno */
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Seções com fundo branco, sombra leve e cantos arredondados */
+.about, .vision, .education, .languages {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Estilo para parágrafos */
+p {
+    line-height: 1.6;
+    text-indent: 20px; /* Ajuste o valor conforme necessário */
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #0f1753;
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+    position: relative; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0;
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+.icon-right {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.icon-right img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilo para botões */
+button {
+    background-color: #07456e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para o formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para o botão do formulário */
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #575757;
+}
+
+/* Estilo para o rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #07456e;
+    color: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para os ícones de contato */
+.social-links {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+.social-links a {
+    margin: 0 10px; /* Espaço entre os ícones */
+}
+
+.social-links img {
+    width: 40px; 
+    height: 40px; 
+    object-fit: cover; 
+}
+
+/* Estilos para a foto na página Sobre Mim */
+.foto-sobre {
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    margin: 10px 0; 
+    border: 2px solid #000000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    float: left; 
+    margin-right: 15px; 
+}
+
+/* Estilos para a foto na página Kitesurfista */
+.foto-kite {
+    display: block;
+    width: 300px; 
+    height: 300px;
+    border-radius: 10%; 
+    object-fit: cover; 
+    margin: 20px auto; 
+    border: 2px solid #000000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    float: left; 
+    margin-right: 15px; 
+}
+
+/* Estilo para as seções */
+section {
+    margin-bottom: 100px; /* Espaço entre as seções */
+}
+
+/* Estilo para a seção do portfólio */
+.portfolio {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio h2 {
+    color: #1d46a5;
+    margin-bottom: 20px;
+}
+
+.portfolio ul {
+    list-style: none;
+}
+
+.portfolio ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio ul li img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.project-info {
+    max-width: 600px;
+}
+
+.project-info h3 {
+    color: #07456e;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Estilo para a seção de Formação e Idiomas */
+.education, .languages {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education h2, .languages h2 {
+    color: #1d46a5;
+    margin-bottom: 20px;
+}
+
+.education ul, .languages ul {
+    list-style: none;
+}
+
+.education ul li, .languages ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.education ul li:last-child, .languages ul li:last-child {
+    border-bottom: none;
+}
+
